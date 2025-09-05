@@ -119,7 +119,7 @@ The pipeline consists of multiple stages:
 
 📂 A standard project setup includes:
 
-.
+
 ├── Jenkinsfile       # Defines the pipeline workflow
 
 ├── Dockerfile        # Defines how the Docker image is built
@@ -136,6 +136,7 @@ The pipeline consists of multiple stages:
 🏗️ Project Architecture
 
 🧑‍💻 Developer
+
                │
         (Push Code to GitHub)
         
@@ -191,6 +192,7 @@ kubectl get pods
 kubectl get svc
 
 to check application status.
+
 🌍 Access the application URL from Minikube to confirm deployment.
 
 
@@ -199,6 +201,7 @@ to check application status.
 🧹 Cleanup Process
 
 When testing is complete:
+
 ❌ Delete Kubernetes deployments and services.
 
 🛑 Stop the Minikube cluster.
