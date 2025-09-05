@@ -64,6 +64,7 @@ It provides a hands-on simulation of real-world DevOps practices, where automati
 
 
 🔑 Configure Jenkins credentials for GitHub and DockerHub.
+
 ✅ Verify Jenkins has access to Docker and kubectl commands.
 
 
@@ -76,6 +77,7 @@ It provides a hands-on simulation of real-world DevOps practices, where automati
 http://<localhost-ip>:8080/github-webhook/
 
 🔔 Select “Push Events” so Jenkins is triggered automatically when code is pushed.
+
 🚀 This ensures continuous integration is achieved.
 
 
