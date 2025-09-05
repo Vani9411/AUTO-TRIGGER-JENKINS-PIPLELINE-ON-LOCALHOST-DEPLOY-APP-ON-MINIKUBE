@@ -88,10 +88,15 @@ http://<localhost-ip>:8080/github-webhook/
 The pipeline consists of multiple stages:
 
 1️⃣ Checkout Code – Jenkins fetches the latest source code from GitHub.
+
 2️⃣ Build Application – The application is compiled and packaged.
+
 3️⃣ Containerization – A Docker image is created for the application.
+
 4️⃣ Push to DockerHub – The Docker image is uploaded to DockerHub.
+
 5️⃣ Deploy to Minikube – Kubernetes manifests are applied using kubectl.
+
 6️⃣ Verification – Jenkins confirms that the app is running successfully.
 
 
@@ -100,8 +105,11 @@ The pipeline consists of multiple stages:
 🔹 5. Deploy Application on Minikube
 
 ▶️ Start Minikube cluster locally.
+
 📄 Apply Kubernetes Deployment and Service manifests.
+
 🔎 Check pods and services to confirm application is running.
+
 🌐 Access the app via Minikube service URL.
 
 
@@ -113,9 +121,13 @@ The pipeline consists of multiple stages:
 
 .
 ├── Jenkinsfile       # Defines the pipeline workflow
+
 ├── Dockerfile        # Defines how the Docker image is built
+
 ├── deployment.yaml   # Kubernetes deployment configuration
+
 ├── service.yaml      # Kubernetes service configuration
+
 └── src/              # Application source code
 
 
@@ -126,14 +138,18 @@ The pipeline consists of multiple stages:
 🧑‍💻 Developer
                │
         (Push Code to GitHub)
+        
                │
                ▼
          🌐 GitHub Repo
+         
                │
        (Webhook Trigger)
+       
                │
                ▼
           ⚙️ Jenkins CI/CD
+          
      ┌─────────────────────────────┐
      │ 1. Checkout Code            │
      │ 2. Build Application        │
@@ -141,18 +157,23 @@ The pipeline consists of multiple stages:
      │ 4. Push Image to DockerHub  │
      │ 5. Deploy on Minikube       │
      └─────────────────────────────┘
+     
                │
                ▼
         🐳 DockerHub Registry
+        
                │
                ▼
         ☸️ Minikube Cluster
+        
      ┌─────────────────────────────┐
      │ Kubernetes Deployment +     │
      │ Service running the app     │
      └─────────────────────────────┘
+     
                │
                ▼
+               
           🌍 End User Access
 
 
@@ -161,7 +182,9 @@ The pipeline consists of multiple stages:
 🔹 7. Monitoring and Verification
 
 📊 Use Jenkins dashboard to monitor pipeline execution.
+
 🐳 Verify DockerHub to confirm image push.
+
 ☸️ Run:
 
 kubectl get pods
@@ -177,7 +200,9 @@ to check application status.
 
 When testing is complete:
 ❌ Delete Kubernetes deployments and services.
+
 🛑 Stop the Minikube cluster.
+
 🧽 Remove local Docker images if not needed.
 
 👉 This prevents unnecessary resource usage and keeps the environment clean.
