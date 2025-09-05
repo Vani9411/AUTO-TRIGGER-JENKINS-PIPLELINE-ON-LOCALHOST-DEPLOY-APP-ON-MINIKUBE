@@ -36,9 +36,13 @@ It provides a hands-on simulation of real-world DevOps practices, where automati
 🔹 1. Install and Configure Tools
 
 📥 Install Git for version control.
+
 🐳 Install Docker Desktop and enable Kubernetes support if required.
+
 ⚙️ Install Jenkins on Windows and start it as a service.
+
 ☸️ Install Minikube and kubectl for Kubernetes deployment.
+
 🔑 Configure GitHub and DockerHub accounts.
 
 
