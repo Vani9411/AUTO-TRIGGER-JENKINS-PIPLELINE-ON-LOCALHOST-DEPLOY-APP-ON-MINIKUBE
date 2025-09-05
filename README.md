@@ -135,7 +135,8 @@ The pipeline consists of multiple stages:
 
 🏗️ Project Architecture
 
-🧑‍💻 Developer
+
+       🧑‍💻 Developer
 
                │
         (Push Code to GitHub)
