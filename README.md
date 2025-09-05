@@ -47,6 +47,7 @@ It provides a hands-on simulation of real-world DevOps practices, where automati
 🔹 2. Setup Jenkins on Windows
 
 🌐 Launch Jenkins on http://localhost:8080.
+
 📦 Install necessary plugins:
 
 🔹 Git Plugin
